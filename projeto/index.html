@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
     <header>
         <nav class="rodape">
@@ -15,49 +17,49 @@
             <p>F4BANK</p>
         </nav>
     </header>
-        <main>
-            <!-- parece que nao é boa prática colocar muitasc divs e é melhor usar tags semanticas. Ideias? -->
-            <div>
-                <h1>
-                    F4BANK - TRADIÇÃO E INOVAÇÃO NO SEU BOLSO
-                </h1>
-                <p>
-                    Somos um banco moderno criado por jovens e nosso objetivo é facilitar a sua vida. Quem disse que entender de finanças precisa ser complicado? 
-                </p>
+    <main>
+        <!-- parece que nao é boa prática colocar muitasc divs e é melhor usar tags semanticas. Ideias? -->
+        <div>
+            <h1>
+                F4BANK - TRADIÇÃO E INOVAÇÃO NO SEU BOLSO
+            </h1>
+            <p>
+                Somos um banco moderno criado por jovens e nosso objetivo é facilitar a sua vida. Quem disse que entender de finanças precisa ser complicado?
+            </p>
+        </div>
+        <div>
+            <h2>
+                NOSSO PRODUTO E VANTAGENS
+            </h2>
+            <div class="lista-vantagens">
+                <!-- será que precisamos mudar essa DIV? -->
+                <ol>
+                    <li>Taxas de juros reduzidas</li>
+                    <li>Cartao de crédito sem anuidade</li>
+                    <li>Rentabilidade acima do mercado para quem planeja o futuro</li>
+                    <li>Somos digitais!</li>
+                </ol>
             </div>
-            <div>
-                <h2>
-                    NOSSO PRODUTO E VANTAGENS
-                </h2>
-                <div class="lista-vantagens"> 
-                    <!-- será que precisamos mudar essa DIV? -->
-                    <ol>
-                        <li>Taxas de juros reduzidas</li>
-                        <li>Cartao de crédito sem anuidade</li>
-                        <li>Rentabilidade acima do mercado para quem planeja o futuro</li>
-                        <li>Somos digitais!</li>
-                      </ol>
-                </div>
-                
-            </div>
-            <div class="formulario">
-                <!-- Formulário tá ok pra vcs? -->
-                <h2>
-                    ABRA SUA CONTA
-                </h2>
-                <form>
-                    <label for="nome">Digite seu nome</label>
-                    <input type="text" id="nome" name="nome">
 
-                    <label for="nascimento">Data de nascimento</label>
-                    <input type="date" id="nascimento" name="nascimento">
+        </div>
+        <div class="formulario">
+            <!-- Formulário tá ok pra vcs? -->
+            <h2>
+                ABRA SUA CONTA
+            </h2>
+            <form>
+                <label for="nome">Digite seu nome</label>
+                <input type="text" id="nome" name="nome">
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                    
-                </form>
-            </div>
-        </main>
+                <label for="nascimento">Data de nascimento</label>
+                <input type="date" id="nascimento" name="nascimento">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+            </form>
+        </div>
+    </main>
     <footer>
         <!-- instagram -->
         <div>
@@ -70,9 +72,9 @@
             <img src="img/facebook.png" alt="logo do facebook">
             <a href="">Facebook</a>
         </div>
-        
+
     </footer>
-    
+
 </body>
 
 </html>
