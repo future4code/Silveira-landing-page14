@@ -12,68 +12,76 @@
 
 <body>
     <header>
-        <nav class="rodape">
+        <nav class="cabecalho"> <!-- Alterar parar cabeçalho -->
             <img id="logo" src="img/logo.png" alt="logo do banco">
-            <p>F4BANK</p>
+            <div class="barra-navegacao">
+               <button><a href="">Home</a></button>
+               <button><a href="">Quem Somos</a></button>
+               <button><a href="">Serviços</a></button>
+            </div>
         </nav>
     </header>
-    <main>
-        <!-- parece que nao é boa prática colocar muitasc divs e é melhor usar tags semanticas. Ideias? -->
-        <div>
-            <h1>
-                F4BANK - TRADIÇÃO E INOVAÇÃO NO SEU BOLSO
-            </h1>
-            <p>
-                Somos um banco moderno criado por jovens e nosso objetivo é facilitar a sua vida. Quem disse que entender de finanças precisa ser complicado?
-            </p>
-        </div>
-        <div>
-            <h2>
-                NOSSO PRODUTO E VANTAGENS
-            </h2>
-            <div class="lista-vantagens">
-                <!-- será que precisamos mudar essa DIV? -->
-                <ol>
-                    <li>Taxas de juros reduzidas</li>
-                    <li>Cartao de crédito sem anuidade</li>
-                    <li>Rentabilidade acima do mercado para quem planeja o futuro</li>
-                    <li>Somos digitais!</li>
-                </ol>
+        <main>
+            <!-- parece que nao é boa prática colocar muitasc divs e é melhor usar tags semanticas. Ideias? -->
+            <div>
+                <h1>
+                    F4BANK - TRADIÇÃO E INOVAÇÃO NO SEU BOLSO
+                </h1>
+                <p>
+                    Somos um banco moderno criado por jovens e nosso objetivo é facilitar a sua vida. Quem disse que entender de finanças precisa ser complicado? 
+                </p>
             </div>
+            <div>
+                <h2>
+                    NOSSO PRODUTO E VANTAGENS
+                </h2>
+                <div class="lista-vantagens"> 
+                    <!-- será que precisamos mudar essa DIV? -->
+                    <ol>
+                        <li>Taxas de juros reduzidas</li>
+                        <li>Cartao de crédito sem anuidade</li>
+                        <li>Rentabilidade acima do mercado para quem planeja o futuro</li>
+                        <li>Somos digitais!</li>
+                    </ol>
+                </div>
+                
+            </div>
+            <div class="formulario">
+                <!-- Formulário tá ok pra vcs? -->
+                <h2>
+                    ABRA SUA CONTA
+                </h2>
+                <form>
+                    <label for="CPF">CPF</label>
+                    <input type="text" id="CPF" name="CPF">
 
-        </div>
-        <div class="formulario">
-            <!-- Formulário tá ok pra vcs? -->
-            <h2>
-                ABRA SUA CONTA
-            </h2>
-            <form>
-                <label for="nome">Digite seu nome</label>
-                <input type="text" id="nome" name="nome">
+                    <label for="nome">Nome completo</label>
+                    <input type="nome" id="nome" name="nome">
 
-                <label for="nascimento">Data de nascimento</label>
-                <input type="date" id="nascimento" name="nascimento">
-
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-
-            </form>
-        </div>
-    </main>
-    <footer>
-        <!-- instagram -->
-        <div>
-            <img src="img/ig.png" alt="logo do instagram">
-            <a href="">Instagram</a>
-        </div>
-        <h6>F4BANK - Tradiçao e inovação</h6>
-        <!-- facebook -->
-        <div>
-            <img src="img/facebook.png" alt="logo do facebook">
-            <a href="">Facebook</a>
-        </div>
-
-    </footer>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                    <button type="submit">Cadastrar</button> <!--botao para enviar infos-->
+                    
+                </form>
+            </div>
+        </main>
+        <footer>
+            <!-- facebook -->
+            <div>
+                <a href="https://twitter.com/F4_bank" target="_blank" alt="Logo Rede Social Facebook."> <img class="icon" src="img/facebook.png">
+            </div>
+    
+            <!-- twitter -->
+            <div>
+                <a href="https://twitter.com/F4_bank" target="_blank" alt="Logo Rede Social Twitter."> <img class="icon" src="img/twitter.png">
+            </div>
+    
+            <!-- instagram -->
+            <div>
+                <a href="https://twitter.com/F4_bank" target="_blank" alt="Logo Rede Social Instagram."> <img class="icon" src="img/ig.png">
+            </div>
+        </footer>
+    
 
 </body>
 

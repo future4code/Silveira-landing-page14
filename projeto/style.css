@@ -1,20 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.barra-navegacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.barra-navegacao>button{
+    width: 6vw;
+    height: 5vh;
+}
+button>a{
+    text-decoration: none;
+}
+button>a:link{
+    color: black;
+}
+button>a:visited{
+    color: black;
+}
 /* Style Header */
+header{
+    height: 15vh;
+    background-color: blue;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
+}
+#logo{
+    width: 5%;
+}
 
 
 
 
 /* Style Main */
-
+main{
+    height: 100vh;
+    text-align: center;
+    background-color: aqua;
+}
 
 
 
 
 /* Style Footer */
-footer{
-    background-color: brown;
+footer {
+    height: 5vh;
+    background: linear-gradient(#FF914D, #FF500F);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
+.icon {
+    display: flex;
+    margin: 5px;
+    padding: 2px;
+    text-align: center;
+    justify-content: center;
+    width: 30px;
+}
 
 
 /* Style Responsivo */
