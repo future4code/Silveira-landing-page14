@@ -1,62 +1,125 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.barra-navegacao{
+
+
+/* Style Header */
+
+.menu {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    align-items: center;
 }
-.barra-navegacao>button{
+
+.menu a {
     width: 6vw;
     height: 5vh;
 }
-button>a{
-    text-decoration: none;
-}
-button>a:link{
-    color: black;
-}
-button>a:visited{
-    color: black;
-}
-/* Style Header */
-header{
+
+header {
     height: 15vh;
-    background-color: blue;
-}
-.cabecalho{
+    background: linear-gradient(#ffbd59, #FF914D);
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
-#logo{
-    width: 5%;
+    justify-content: space-between;
 }
 
-
+.logo {
+    width: 100px;
+    display: flex;
+}
 
 
 /* Style Main */
-main{
-    height: 100vh;
+
+main {
     text-align: center;
-    background-color: aqua;
+    display: flex;
+}
+
+.texto-home {
+    text-align: justify;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    line-height: 35px;
+}
+
+.texto-sobre {
+    text-align: justify;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    line-height: 35px;
+}
+
+.imagem-sobre {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto-servico {
+    text-align: justify;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    line-height: 35px;
+}
+
+.imagem-servico {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto-contato {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    line-height: 50px;
+}
+
+.imagem-contato {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagem-home {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
+/* Style Formulário*/
+
+.formulario {}
 
 
 /* Style Footer */
+
 footer {
     height: 5vh;
-    background: linear-gradient(#FF914D, #FF500F);
+    background: linear-gradient(#ffbd59, #FF914D);
     padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
+    flex-grow: 1px;
 }
 
 .icon {
@@ -70,8 +133,3 @@ footer {
 
 
 /* Style Responsivo */
-
-
-
-
-
