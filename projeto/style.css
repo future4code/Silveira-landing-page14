@@ -1,7 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Consolas;
+   
 }
+
+
 
 
 /* Style Header */
@@ -21,6 +25,7 @@ header {
     background: linear-gradient(#ffbd59, #FF914D);
     display: flex;
     justify-content: space-between;
+  
 }
 
 .logo {
@@ -31,9 +36,12 @@ header {
 
 /* Style Main */
 
-main {
+.container {
     text-align: center;
     display: flex;
+    height: 100%;
+    /* tava tentando ajustar a altura do container (que antes era a main) pra ocupar mais espaço. */
+    
 }
 
 .texto-home {
@@ -131,5 +139,29 @@ footer {
     width: 30px;
 }
 
-
+@font-face {
+    font-family: Consolas;
+    src: url(fonts/CONSOLA.TTF);
+}
 /* Style Responsivo */
+
+@media screen and (max-device-width: 750px) {
+    .container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    header {
+        height: 15vh;
+        background: linear-gradient(#ffbd59, #FF914D);
+        display: flex;
+        justify-content: space-between;
+       
+    }
+
+
+
+}
