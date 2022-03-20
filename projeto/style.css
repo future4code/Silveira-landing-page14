@@ -23,7 +23,7 @@
     background-color: black;
     margin: 5%;
     border-radius: 12%;
-    border: 2px solid black
+    border: 1px solid black
 }
 .menu button:hover{
     background-color: white;
@@ -77,6 +77,14 @@
     align-items: center;
     flex-grow: 1;
 }
+.container-contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+}
 
 .texto{
     text-align: justify;
@@ -107,6 +115,7 @@
     margin-right: auto;
     position: relative;
     line-height: 3.125em;
+    bottom: 25em;
 }
 
 .imagem-contato {
@@ -151,12 +160,33 @@ footer{
 /* Style Responsivo */
 
 @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
+    .menu button {
+        width: 90%;
+        height: 40%;
+    }
+    .menu{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .logo {
+        width: 50%;
+        display: flex;
+        justify-content: left;
+    }
     .container {
         display: flex;
         justify-content: center;
         flex-direction: column;
 
     }
+    .texto-contato{
+        bottom: 0;
+    }
+    .container-contato{
+        flex-direction: column;
+    }
+
     .container1{
         flex-direction: column;
     }
