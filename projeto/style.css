@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas;
+}
+
+/* Style Header */
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+/* Alterações do menu de navegação*/
+.menu a{
+    color: #FF914D;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.menu button {
+    width: 12vw;
+    height: 8vh;
+    background-color: black;
+    margin: 5%;
+    border-radius: 12%;
+    border: 1px solid black
+}
+.menu button:hover{
+    background-color: white;
+    color: black;
+}  
+/*Fim das alterações do menu de navegação*/
+
+.container-header {
+    height: 15vh;
+    background: linear-gradient(#ffbd59, #FF914D);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 8vw;
+    display: flex;
+    justify-content: left;
+}
+
+
+/* Style Main */
+
+.container-maior {
+    display: flex; 
+    flex-direction: column;
+    flex-grow: 1;
+  
+    /* tava tentando ajustar a altura do container (que antes era a main) pra ocupar mais espaço. */
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: center;
+    flex-grow: 1;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+.container3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.container-contato{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.texto{
+    text-align: justify;
+    padding-top: 3.125em;
+    padding-bottom: 3.125em;
+    margin-left: 3.125em;
+    margin-right: 3.125em;
+    position: relative;
+    line-height: 2.1875em;
+}
+.texto li{
+    list-style: none;
+}
+
+.imagem-sobre {
+    padding-top: 3.125em;
+    padding-bottom: 3.125em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.texto-contato {
+    text-align: center;
+    padding-top: 3.125em;
+    padding-bottom: 3.125em;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 3.125em;
+}
+
+.imagem-contato {
+    padding-top: 3.125em;
+    padding-bottom: 3.125em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagem-home {
+    padding-top: 3.125em;
+    padding-bottom: 3.125em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/* Style Footer */
+
+footer{
+    height: 5vh;
+    background: linear-gradient(#ffbd59, #FF914D);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.icon {
+    display: flex;
+    margin: 5px;
+    padding: 2px;
+    text-align: center;
+    justify-content: center;
+    width: 30px;
+}
+
+@font-face {
+    font-family: Consolas;
+    src: url(fonts/CONSOLA.TTF);
+}
+/* Style Responsivo */
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
+    .menu button {
+        width: 90%;
+        height: 40%;
+    }
+    .menu{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .logo {
+        width: 50%;
+        display: flex;
+        justify-content: left;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    .container-contato{
+        flex-direction: column;
+    }
+
+    .container1{
+        flex-direction: column;
+    }
+    .container2{
+        flex-direction: column;
+    }
+    .container3{
+        flex-direction: column;
+    }
+    .imagem-home{
+        width: 80%;
+    }
+    
+    header {
+        height: 15vh;
+        background: linear-gradient(#ffbd59, #FF914D);
+        display: flex;
+        justify-content: space-between;
+       
+    }
+
+
+
+}
